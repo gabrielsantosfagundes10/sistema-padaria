@@ -29,6 +29,10 @@ O dashboard centraliza informações importantes do sistema, permitindo acompanh
 - avisos operacionais;
 - resumo financeiro.
 <img width="1274" height="942" alt="image" src="https://github.com/user-attachments/assets/8e99ce52-585f-4a5f-ab68-e909b2e9b161" />
+<img width="1280" height="937" alt="image" src="https://github.com/user-attachments/assets/241f8881-76a2-4ddf-9887-54cd647254e1" />
+<img width="1280" height="936" alt="image" src="https://github.com/user-attachments/assets/ef4a8d8c-37b0-45f7-8023-af329749a83c" />
+<img width="1280" height="936" alt="image" src="https://github.com/user-attachments/assets/12fb6984-a94b-406a-8cbd-6d6eb691be6f" />
+<img width="1280" height="935" alt="image" src="https://github.com/user-attachments/assets/7d867e79-d4a7-4f2c-8878-d38e6efa98c9" />
 
 ## Controle financeiro
 
@@ -38,10 +42,10 @@ O sistema possui funcionalidades voltadas para gestão financeira da padaria, in
 - controle de lucros;
 - fechamento de caixa;
 - análise financeira semanal e mensal.
+<img width="1279" height="931" alt="image" src="https://github.com/user-attachments/assets/76c03f0b-fd17-4851-bd29-71c60f426b90" />
 <img width="1280" height="935" alt="image" src="https://github.com/user-attachments/assets/64a1c02b-5be4-4c39-bf8f-3fccc5cd501d" />
 <img width="1280" height="936" alt="image" src="https://github.com/user-attachments/assets/a434e36a-0110-4cf1-b7fe-2210e4167b48" />
 <img width="1280" height="932" alt="image" src="https://github.com/user-attachments/assets/d1b12731-e94e-4723-b34e-4db53a38d066" />
-<img width="1280" height="932" alt="image" src="https://github.com/user-attachments/assets/e5af63a7-e2b4-447c-97ff-53b9715c4c36" />
 
 ## Tecnologias utilizadas
 
