@@ -222,7 +222,7 @@ $mes_pt = $meses_nomes[date('M')];
             }
             
             .header-title h1 { font-size: 22px !important; }
-            .header-title p { display: none !important; } /* Remove comunicação direta */
+            .header-title p { display: none !important; }
 
             .btn-add { 
                 width: 100%; 
