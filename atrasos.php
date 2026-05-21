@@ -19,7 +19,7 @@ function formatarTempo($minutos) {
 if (isset($_POST['salvar_atraso'])) {
     $nome = $conn->real_escape_string($_POST['funcionario']);
     $motivo = $conn->real_escape_string($_POST['motivo']);
-    $tipo = $_POST['tipo'];
+    $tipo = $conn->real_escape_string($_POST['tipo']);
     $minutos_finais = 0;
     $data_hoje = date('Y-m-d');
 
@@ -42,6 +42,8 @@ if (isset($_POST['salvar_atraso'])) {
     } else {
         $data_registro = date('Y-m-d H:i:s');
     }
+
+    $minutos_finais = (int) $minutos_finais;
 
     $sql = "INSERT INTO atrasos (funcionario, motivo, tipo, minutos_atraso, data_atraso) 
             VALUES ('$nome', '$motivo', '$tipo', '$minutos_finais', '$data_registro')";
@@ -342,10 +344,6 @@ $mes_pt = $meses[date('M')];
             }
             
             .card-funcionario { border-radius: 18px; }
-        }
-
-        @media (max-width: 1024px) and (min-width: 769px) {
-            /* Se quiser manter sidebar lateral em tablets, ajuste aqui. Atualmente segue o padrão Mobile. */
         }
 
         ::-webkit-scrollbar { width: 6px; }
