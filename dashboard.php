@@ -1,8 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 include('trava.php');
 include('config.php');
 
@@ -513,20 +509,13 @@ $mes_pt = $meses_nomes[date('M')];
             btnInstall.style.display = 'none';
             deferredPrompt.prompt();
             deferredPrompt.userChoice.then((choiceResult) => {
-                if (choiceResult.outcome === 'accepted') {
-                    console.log('User accepted the install prompt');
-                }
                 deferredPrompt = null;
             });
         });
 
         // Registrar Service Worker
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js').then(function(registration) {
-                console.log('SW registrado com sucesso:', registration.scope);
-            }, function(err) {
-                console.log('Falha no SW:', err);
-            });
+            navigator.serviceWorker.register('sw.js');
         }
 
         // Função do Relógio Sincronizada com o Servidor (PHP Date)
