@@ -3,9 +3,9 @@ date_default_timezone_set('America/Sao_Paulo');
 
 // --- DADOS DO BANCO DE DEMO ---
 $host = "localhost";
-$user = "u360443047_padariademo";
-$pass = "010906Gbl";
-$db   = "u360443047_padariademo";
+$user = "usuario"; // Credenciais alteradas por confidencialidade
+$pass = "senha"; // Credenciais alteradas por confidencialidade
+$db   = "banco"; // Credenciais alteradas por confidencialidade
 
 $conn = new mysqli($host, $user, $pass, $db);
 
