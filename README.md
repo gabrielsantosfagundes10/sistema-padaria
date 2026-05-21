@@ -4,6 +4,9 @@ Sistema web desenvolvido para gerenciamento operacional e financeiro de padaria,
 
 O sistema foi desenvolvido para uso real em ambiente de produção, sendo utilizado por um cliente para gerenciamento de encomendas, contas, fluxo de caixa e controle financeiro.
 
+Uma versão demonstrativa do sistema está disponível no link abaixo:  
+🔗 [Demo do sistema](https://gestaopaodavida.xyz/demo/)
+
 ## Funcionalidades
 
 - Sistema de autenticação com login
