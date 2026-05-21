@@ -262,9 +262,7 @@ if ($iphone || $ipad || $android || $palmpre || $ipod || $berry || $symbian) {
     // Registro do SW para manter o funcionamento base
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-            navigator.serviceWorker.register('sw.js')
-            .then(reg => console.log('SW ativo'))
-            .catch(err => console.log('Erro SW:', err));
+            navigator.serviceWorker.register('sw.js');
         });
     }
 </script>
