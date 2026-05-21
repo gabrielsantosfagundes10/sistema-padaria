@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sinal Fraco - Padaria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; transition: all 0.3s ease; }
+        
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            color: #fff;
+            background: radial-gradient(circle at top right, rgba(255, 87, 51, 0.15), transparent), #050505;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .container { 
+            width: 100%;
+            max-width: 400px; 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(20px);
+            padding: 40px 30px; 
+            border-radius: 30px; 
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .icon-box {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        .icon-box i { 
+            font-size: 60px; 
+            color: #ff5733;
+            filter: drop-shadow(0 0 15px rgba(255, 87, 51, 0.4));
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.7; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        h1 { 
+            margin: 0 0 15px 0; 
+            font-weight: 900; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            font-size: 22px;
+            color: #fff;
+        }
+
+        p { 
+            font-size: 14px; 
+            color: rgba(255,255,255,0.6); 
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        button { 
+            width: 100%; 
+            padding: 18px; 
+            background: linear-gradient(45deg, #ff5733, #ff8c00); 
+            color: white; 
+            border: none; 
+            border-radius: 15px; 
+            font-weight: 900; 
+            cursor: pointer; 
+            font-size: 13px; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 10px 20px rgba(255, 87, 51, 0.2);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .status-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #ff4757;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="icon-box">
+        <i class="fa-solid fa-wifi-slash"></i>
+    </div>
+    <h1>Sistema Offline</h1>
+    <p>O Gerenciamento da Padaria precisa de internet para sincronizar as encomendas e avisos.</p>
+    
+    <button onclick="window.location.reload()">
+        <i class="fa-solid fa-rotate-right" style="margin-right: 8px;"></i> Tentar Novamente
+    </button>
+    
+    <div style="margin-top: 25px; font-size: 10px; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 1px;">
+        <span class="status-dot"></span> Sem Conexão detectada
+    </div>
+</div>
+
+</body>
+</html>
